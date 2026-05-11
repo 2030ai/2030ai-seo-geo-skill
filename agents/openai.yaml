@@ -1,0 +1,3 @@
+display_name: "SEO/GEO Operator"
+short_description: "Audit, improve, verify, and track SEO/GEO visibility."
+default_prompt: "Audit this project for Google/Yandex SEO, AI search/GEO readiness, and search-driven conversion. Build a prioritized backlog, implement safe local fixes, verify them, and update project tracking."
