@@ -5,7 +5,7 @@ user-invokable: true
 argument-hint: "[audit|plan|execute|verify|track|monitor] [url-or-project]"
 metadata:
   owner: "2030AI"
-  version: "0.1.0"
+  version: "0.1.1"
   category: "seo-geo"
 ---
 
@@ -36,7 +36,7 @@ If the user asks for "full SEO", "GEO", "AI search", "AI Overviews", "Yandex SEO
 
 ## Evidence Tiers
 
-- **Tier 1:** official documentation from Google Search Central, Yandex Webmaster/Metrica, Schema.org, OpenAI, Anthropic, Perplexity, Bing, W3C/IETF/web.dev.
+- **Tier 1:** official documentation from Google Search Central, Yandex Webmaster/Metrica, Yandex AI/Search with Alice docs, Schema.org, OpenAI, Anthropic, Perplexity, Bing, W3C/IETF/web.dev.
 - **Tier 2:** peer-reviewed or preprint research with citation details and date.
 - **Tier 3:** industry studies from Ahrefs, Semrush, SparkToro, Cloudflare, Similarweb, DataForSEO, etc. Include date, sample, and uncertainty.
 - **Tier 4:** GitHub repos, tools, blog posts, Reddit/forum observations. Use as leads to test, not as truth.
@@ -61,6 +61,7 @@ Read only the files needed for the task:
 - Keep Russian projects usable for Russian users: payment in rubles, no VPN where true, Telegram/VK/Yandex surfaces, 152-FZ/privacy language, and Yandex Metrica/Webmaster checks.
 - Treat `llms.txt` as a useful emerging convention, not an official ranking requirement.
 - Separate search/referral crawlers from training crawlers in robots decisions.
+- For Yandex AI/Search with Alice, audit `YandexAdditionalBot` / `YandexAdditional` rules separately from primary Yandex indexing: they affect generated-answer use of already indexed pages, not ordinary indexing itself.
 
 ## Output Shape
 

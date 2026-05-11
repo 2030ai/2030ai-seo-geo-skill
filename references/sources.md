@@ -23,6 +23,9 @@ Use these as the default source hierarchy. Browse current versions before relyin
 - Perplexity robots.txt docs: https://www.perplexity.ai/help-center/en/articles/10354969-how-does-perplexity-follow-robots-txt
 - Google crawler docs and Google-Extended: https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers
 - Common Crawl crawler: https://commoncrawl.org/ccbot
+- Yandex Search with Yandex AI: https://yandex.com/support/webmaster/en/yandex-ai
+- Yandex Search with Alice: https://yandex.ru/support/webmaster/en/alice
+- Yandex robot verification and `YandexAdditionalBot`: https://yandex.ru/support/webmaster/en/robot-workings/check-yandex-robots
 
 ## llms.txt / AI-Readable Web
 
@@ -30,6 +33,12 @@ Use these as the default source hierarchy. Browse current versions before relyin
 - AnswerDotAI reference repo: https://github.com/AnswerDotAI/llms-txt
 - llms.txt hub: https://github.com/thedaviddias/llms-txt-hub
 - Firecrawl generator: https://github.com/firecrawl/llmstxt-generator
+
+## Methodology Watchlist
+
+GitHub repos here are Tier 4 signal sources. Use them to discover checks, then validate any claim against official docs or direct project output.
+
+- GEO Optimizer changelog: https://github.com/Auriti-Labs/geo-optimizer-skill/blob/main/CHANGELOG.md
 
 ## GEO Research
 
