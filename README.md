@@ -1,18 +1,18 @@
 # 2030ai SEO/GEO Skill
 
-An operator skill for SEO, GEO, AI-search visibility, and search-driven conversion work.
+Операторский skill для SEO, GEO, видимости в AI-поиске и задач, где поисковый трафик должен приводить к конверсиям.
 
-It is designed for agentic coding environments where the assistant can inspect a site or local repository, produce a prioritized backlog, implement safe fixes, verify the result, and update project tracking.
+Он рассчитан на агентные среды разработки: ассистент может проверить сайт или локальный репозиторий, собрать приоритизированный backlog, внести безопасные исправления, проверить результат и обновить project tracking.
 
-## What It Covers
+## Что Он Покрывает
 
 - Technical SEO: crawlability, indexability, redirects, canonicals, sitemaps, robots, metadata, headings, internal links, image alt text, and rendered HTML checks.
 - Structured data: JSON-LD/schema validation, visible-content alignment, entity graph, and `sameAs` hygiene.
-- GEO and AI-search readiness: AI crawler policy, `llms.txt`, answer-first passages, quotable facts, citations, source clarity, and prompt-set tracking.
-- Russian-market SEO: Yandex Webmaster/Metrica, Yandex schema behavior, ruble payments, Russian-language trust signals, Telegram/VK/Habr/vc.ru surfaces, privacy and legal-page checks.
+- GEO и AI-search readiness: AI crawler policy, `llms.txt`, answer-first passages, quotable facts, citations, source clarity, and prompt-set tracking.
+- Российский SEO-слой: Yandex Webmaster/Metrica, поведение Yandex со schema.org, рублевые платежи, русскоязычные trust signals, Telegram/VK/Habr/vc.ru surfaces, privacy and legal-page checks.
 - Execution workflow: audit, plan, implement, verify, and track progress.
 
-## Repository Layout
+## Структура Репозитория
 
 ```text
 .
@@ -27,69 +27,69 @@ It is designed for agentic coding environments where the assistant can inspect a
     `-- sources.md
 ```
 
-`SKILL.md` is intentionally concise. The heavier methodology, source lists, Russian-market notes, and refresh watchlist live in `references/` so an agent can load only what it needs.
+`SKILL.md` намеренно короткий. Методология, список источников, российский слой и watchlist для обновлений лежат в `references/`, чтобы агент загружал только нужный контекст.
 
-## Commands
+## Команды
 
-The skill supports these task modes:
+Skill поддерживает такие режимы:
 
-- `audit <url-or-project>`: inspect a site or local repo and produce a prioritized backlog.
-- `plan <url-or-project>`: turn audit findings into a staged implementation plan.
-- `execute <url-or-project>`: implement approved or obvious fixes in the local repo.
-- `verify <url-or-project>`: rerun checks and compare against the baseline.
-- `track <url-or-project>`: update project `todo.md` or search-visibility docs.
-- `monitor`: refresh the skill methodology from official docs, research, and monitored repositories.
+- `audit <url-or-project>`: проверить сайт или локальный репозиторий и собрать приоритизированный backlog.
+- `plan <url-or-project>`: превратить findings аудита в staged implementation plan.
+- `execute <url-or-project>`: внести approved или очевидно безопасные исправления в локальный repo.
+- `verify <url-or-project>`: повторить проверки и сравнить результат с baseline.
+- `track <url-or-project>`: обновить project `todo.md` или search-visibility docs.
+- `monitor`: обновить методологию skill по official docs, research и monitored repositories.
 
-When no command is provided, default to `audit`. When the user asks to fix issues and a local repo is available, run `audit -> plan -> execute -> verify -> track`.
+Если команда не указана, режим по умолчанию — `audit`. Если пользователь просит исправить проблемы и доступен локальный repo, выполняй цепочку `audit -> plan -> execute -> verify -> track`.
 
-## Installation
+## Установка
 
-Clone the repository:
+Склонируйте репозиторий:
 
 ```bash
 git clone https://github.com/2030ai/2030ai-seo-geo-skill.git
 ```
 
-Then expose it to your agent runtime as a skill. For example:
+Затем подключите его в skill directory вашей агентной среды. Например:
 
 ```bash
 ln -sfn "$PWD/2030ai-seo-geo-skill" "$HOME/.codex/skills/2030ai-seo-geo-skill"
 ```
 
-If your environment uses a different skill directory, symlink or copy the repository there.
+Если ваша среда использует другой каталог для skills, сделайте symlink или скопируйте репозиторий туда.
 
-## Refresh Model
+## Модель Обновления
 
-The public repository contains the reusable skill and generic reference watchlist. If you run a private ecosystem or multi-project maintenance workflow, keep local project paths, private predecessor skills, and client-specific todo targets outside this repository.
+Публичный репозиторий содержит reusable skill и generic reference watchlist. Если у вас есть private ecosystem или multi-project maintenance workflow, храните локальные project paths, private predecessor skills и client-specific todo targets вне этого репозитория.
 
-A healthy refresh workflow should:
+Хороший refresh workflow:
 
-1. Check official documentation first: Google Search Central, Yandex Webmaster/Metrica, Schema.org, Bing, IndexNow, web.dev, and crawler docs from AI providers.
-2. Check research and industry sources for material methodology changes.
-3. Review monitored GitHub repositories as signal, not truth.
-4. Update `SKILL.md` and `references/*.md` only when the change affects the actual workflow.
-5. Validate YAML/frontmatter.
-6. Commit and push the public repository.
-7. Update any local installed skill symlink or checkout used by your private agent environment.
+1. Сначала проверяет official documentation: Google Search Central, Yandex Webmaster/Metrica, Schema.org, Bing, IndexNow, web.dev и crawler docs от AI providers.
+2. Проверяет research и industry sources на material methodology changes.
+3. Смотрит monitored GitHub repositories как signal, а не как truth.
+4. Обновляет `SKILL.md` и `references/*.md` только если изменение влияет на workflow.
+5. Валидирует YAML/frontmatter.
+6. Коммитит и пушит публичный репозиторий.
+7. Обновляет локальный installed skill symlink или checkout, который использует private agent environment.
 
 ## Evidence Standard
 
-The skill uses four evidence tiers:
+Skill использует четыре уровня доказательности:
 
-- Tier 1: official documentation and first-party tool output.
-- Tier 2: research papers with dates and citation details.
-- Tier 3: industry studies with dates, samples, and uncertainty.
+- Tier 1: official documentation и first-party tool output.
+- Tier 2: research papers с датами и citation details.
+- Tier 3: industry studies с датами, sample size и uncertainty.
 - Tier 4: GitHub repos, tools, blog posts, Reddit/forum observations.
 
-Tier 4 is useful for discovery. It should not override official documentation.
+Tier 4 полезен для discovery, но не должен переопределять official documentation.
 
-## Non-Goals
+## Не Цели
 
-- It does not promise AI-search rankings.
-- It does not recommend fake reviews, hidden content, fake statistics, or unsupported compliance claims.
-- It treats `llms.txt` as an emerging convention, not an official ranking requirement.
-- It keeps robots decisions separate for search/referral crawlers and training crawlers.
+- Skill не обещает rankings в AI-search.
+- Skill не рекомендует fake reviews, hidden content, fake statistics или unsupported compliance claims.
+- `llms.txt` трактуется как emerging convention, а не official ranking requirement.
+- Robots decisions разделяются для search/referral crawlers и training crawlers.
 
-## License
+## Лицензия
 
-No license is declared yet. Treat the repository as source-available until a license is added.
+Лицензия пока не объявлена. До добавления лицензии считайте репозиторий source-available.
