@@ -21,7 +21,7 @@ Use scores only as triage, not as pseudo-science.
 | Content/entity | 20 | answer-first copy, topical coverage, E-E-A-T, author/org clarity, citations |
 | Technical UX | 15 | Core Web Vitals, mobile, accessibility, navigation, image performance |
 | Structured data | 10 | schema validity, visible-content alignment, sameAs/entity graph |
-| GEO/AI readiness | 20 | crawler policy, llms.txt, quotable passages, evidence, off-site entity footprint |
+| GEO/AI readiness | 20 | crawler policy, Yandex AI/Alice controls when relevant, llms.txt, quotable passages, evidence, off-site entity footprint |
 | Search conversion fit | 15 | intent/page match, CTA clarity, trust, analytics goals, funnel measurement |
 
 ## GEO Principles
@@ -32,6 +32,18 @@ Use scores only as triage, not as pseudo-science.
 - Strong GEO content includes evidence: primary sources, credible citations, original data, named case studies, and first-hand experience.
 - Avoid keyword stuffing. Research shows citations, quotations, statistics, fluency/readability, and structure are more defensible than raw keyword repetition.
 - Platform overlap is low. Do not assume visibility in Google AI Overviews means visibility in ChatGPT or Perplexity.
+- Generated-answer crawlers can be distinct from search indexing crawlers. For Yandex, audit `YandexAdditionalBot` / `YandexAdditional` rules separately because they affect AI/Alice answer use of indexed pages.
+
+## Negative Signals To Check
+
+Negative signals do not automatically mean "bad"; they mean the site has an explicit policy or technical constraint that can suppress AI discovery or answer citation.
+
+- `robots.txt` blocks for AI-answer crawlers such as `YandexAdditionalBot` / `YandexAdditional`, `GPTBot`, `OAI-SearchBot`, `ClaudeBot`, `PerplexityBot`, or `Google-Extended`.
+- `X-Robots-Tag` response headers with `noindex`, `none`, or bot-specific restrictions on priority pages.
+- `<meta name="robots">` or bot-specific meta directives that conflict with the target visibility strategy.
+- Emerging AI exclusion directives such as `noai` / `noimageai` when present.
+- Excessively high or broad `Crawl-delay` rules that can slow discovery or refresh for important crawlers.
+- Stale sitemap timestamps, stale `llms.txt` ordering, or schema missing required basics such as `@context`, `@type`, and canonical `url`.
 
 ## Backlog Priority
 

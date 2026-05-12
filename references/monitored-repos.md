@@ -59,3 +59,7 @@ This list is used by a periodic refresh workflow. Treat every external repo as a
 5. Update this skill only when the change affects methodology or workflow.
 6. Add or refresh project `todo.md` reminders in your private project list when methodology changes.
 7. If a repo is inactive, low-quality, or misleading, remove or demote it.
+
+## Recent Signals
+
+- 2026-05-11: `Auriti-Labs/geo-optimizer-skill` v4.10.3 added useful Tier 4 methodology signals: negative-signal scoring for `X-Robots-Tag`, `noai` / `noimageai`, high `Crawl-delay`, sitemap freshness ordering, schema completeness, and priority-aware batching. Keep using this as a discovery signal only; official crawler and robots behavior remains Tier 1.
