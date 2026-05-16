@@ -8,7 +8,7 @@
 
 - Technical SEO: crawlability, indexability, redirects, canonicals, sitemaps, robots, metadata, headings, internal links, image alt text, and rendered HTML checks.
 - Structured data: JSON-LD/schema validation, visible-content alignment, entity graph, and `sameAs` hygiene.
-- GEO и AI-search readiness: AI crawler policy, `llms.txt`, answer-first passages, quotable facts, citations, source clarity, and prompt-set tracking.
+- GEO и AI-search readiness: AI crawler policy, Perplexity `PerplexityBot` / `Perplexity-User` checks, `llms.txt`, answer-first passages, quotable facts, citations, source clarity, and prompt-set tracking.
 - Российский SEO-слой: Yandex Webmaster/Metrica, Yandex AI/Search with Alice crawler controls, поведение Yandex со schema.org, рублевые платежи, русскоязычные trust signals, Telegram/VK/Habr/vc.ru surfaces, privacy and legal-page checks.
 - Execution workflow: audit, plan, implement, verify, and track progress.
 

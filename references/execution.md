@@ -17,7 +17,8 @@
    - Performance: Lighthouse/PageSpeed/CrUX when available.
    - Analytics: Yandex Metrica/GA events when repo or deployed HTML reveals them.
 4. GEO checks:
-   - AI crawler policy by user-agent category.
+   - AI crawler policy by user-agent category, separating search/linking crawlers, user-triggered fetchers, training crawlers, and regional generated-answer crawlers.
+   - For Perplexity scopes: `PerplexityBot` policy separately from `Perplexity-User` access, plus WAF/CDN allowlist checks against the current official IP JSON endpoints when a WAF/CDN is present.
    - For Russian/Yandex scopes: `YandexBot` indexing policy separately from `YandexAdditionalBot` / `YandexAdditional` generated-answer policy for Yandex AI/Search with Alice.
    - `X-Robots-Tag`, robots meta, bot-specific meta, and emerging `noai` / `noimageai` directives on priority pages.
    - Broad or excessive `Crawl-delay` rules that may slow discovery or freshness.
@@ -61,6 +62,7 @@ Use project-native checks first:
 - Schema validator or JSON-LD parse checks.
 - Sitemap/robots/llms fetch checks.
 - Header and meta checks for `X-Robots-Tag`, `noindex`, `noai`, `noimageai`, and bot-specific directives.
+- WAF/CDN checks for AI-search crawlers when the project uses a security proxy. For Perplexity, compare allow rules and logs with the current official `PerplexityBot` and `Perplexity-User` IP JSON endpoints.
 - Yandex-specific robots checks for `Yandex`, `YandexBot`, `YandexAdditionalBot`, and `YandexAdditional` where the market is Russia/CIS.
 
 For AI visibility, record platform/date and do not overclaim. AI answers are dynamic.
