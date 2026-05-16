@@ -32,6 +32,7 @@ Use scores only as triage, not as pseudo-science.
 - Strong GEO content includes evidence: primary sources, credible citations, original data, named case studies, and first-hand experience.
 - Avoid keyword stuffing. Research shows citations, quotations, statistics, fluency/readability, and structure are more defensible than raw keyword repetition.
 - Platform overlap is low. Do not assume visibility in Google AI Overviews means visibility in ChatGPT or Perplexity.
+- Perplexity has separate crawler surfaces: `PerplexityBot` for surfacing and linking sites in Perplexity search results, and `Perplexity-User` for user-triggered page fetches. Audit both when Perplexity visibility matters.
 - Generated-answer crawlers can be distinct from search indexing crawlers. For Yandex, audit `YandexAdditionalBot` / `YandexAdditional` rules separately because they affect AI/Alice answer use of indexed pages.
 
 ## Negative Signals To Check
@@ -39,6 +40,7 @@ Use scores only as triage, not as pseudo-science.
 Negative signals do not automatically mean "bad"; they mean the site has an explicit policy or technical constraint that can suppress AI discovery or answer citation.
 
 - `robots.txt` blocks for AI-answer crawlers such as `YandexAdditionalBot` / `YandexAdditional`, `GPTBot`, `OAI-SearchBot`, `ClaudeBot`, `PerplexityBot`, or `Google-Extended`.
+- WAF/CDN rules that block AI-search fetches even when `robots.txt` allows them. For Perplexity, check both `PerplexityBot` and `Perplexity-User` against the current official IP JSON endpoints when a WAF/CDN is present.
 - `X-Robots-Tag` response headers with `noindex`, `none`, or bot-specific restrictions on priority pages.
 - `<meta name="robots">` or bot-specific meta directives that conflict with the target visibility strategy.
 - Emerging AI exclusion directives such as `noai` / `noimageai` when present.

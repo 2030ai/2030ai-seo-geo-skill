@@ -5,7 +5,7 @@ user-invokable: true
 argument-hint: "[audit|plan|execute|verify|track|monitor] [url-or-project]"
 metadata:
   owner: "2030AI"
-  version: "0.1.1"
+  version: "0.1.2"
   category: "seo-geo"
 ---
 
@@ -61,6 +61,7 @@ Read only the files needed for the task:
 - Keep Russian projects usable for Russian users: payment in rubles, no VPN where true, Telegram/VK/Yandex surfaces, 152-FZ/privacy language, and Yandex Metrica/Webmaster checks.
 - Treat `llms.txt` as a useful emerging convention, not an official ranking requirement.
 - Separate search/referral crawlers from training crawlers in robots decisions.
+- For Perplexity, audit `PerplexityBot` and `Perplexity-User` separately: one is search/linking crawler policy, the other is user-triggered fetch access. If a WAF/CDN is present, verify current official IP JSON allowlists alongside user-agent rules.
 - For Yandex AI/Search with Alice, audit `YandexAdditionalBot` / `YandexAdditional` rules separately from primary Yandex indexing: they affect generated-answer use of already indexed pages, not ordinary indexing itself.
 
 ## Output Shape

@@ -20,7 +20,9 @@ Use these as the default source hierarchy. Browse current versions before relyin
 
 - OpenAI crawlers: https://developers.openai.com/api/docs/bots
 - Anthropic crawler docs: https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler
-- Perplexity robots.txt docs: https://www.perplexity.ai/help-center/en/articles/10354969-how-does-perplexity-follow-robots-txt
+- Perplexity crawler docs: https://docs.perplexity.ai/docs/resources/perplexity-crawlers
+- PerplexityBot IP JSON: https://www.perplexity.com/perplexitybot.json
+- Perplexity-User IP JSON: https://www.perplexity.com/perplexity-user.json
 - Google crawler docs and Google-Extended: https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers
 - Common Crawl crawler: https://commoncrawl.org/ccbot
 - Yandex Search with Yandex AI: https://yandex.com/support/webmaster/en/yandex-ai
