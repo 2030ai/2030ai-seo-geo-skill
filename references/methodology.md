@@ -7,7 +7,7 @@ Improve qualified discovery and conversion from classic search, AI-assisted sear
 ## Search Surfaces
 
 - Classic search: Google, Yandex, Bing.
-- AI search and answer engines: Google AI Overviews/AI Mode, Search agents and generative UI surfaces when relevant, ChatGPT Search, Claude Search, Perplexity, Bing Copilot/Grok/Gemini where relevant.
+- AI search and answer engines: Google AI Overviews/AI Mode, Search agents and generative UI surfaces when relevant, ChatGPT Search, Claude Search, Perplexity, Bing Copilot, Grok, Gemini where relevant.
 - Entity surfaces: YouTube, Telegram, VK, Habr, vc.ru, Dzen, GitHub, review sites, directories, university/corporate pages, partner pages.
 - Local or regional surfaces: Yandex Business/Maps, 2GIS, Google Business Profile if applicable.
 
