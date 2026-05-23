@@ -7,7 +7,7 @@ Improve qualified discovery and conversion from classic search, AI-assisted sear
 ## Search Surfaces
 
 - Classic search: Google, Yandex, Bing.
-- AI search and answer engines: Google AI Overviews/AI Mode, ChatGPT Search, Claude Search, Perplexity, Bing Copilot/Grok/Gemini where relevant.
+- AI search and answer engines: Google AI Overviews/AI Mode, Search agents and generative UI surfaces when relevant, ChatGPT Search, Claude Search, Perplexity, Bing Copilot, Grok, Gemini where relevant.
 - Entity surfaces: YouTube, Telegram, VK, Habr, vc.ru, Dzen, GitHub, review sites, directories, university/corporate pages, partner pages.
 - Local or regional surfaces: Yandex Business/Maps, 2GIS, Google Business Profile if applicable.
 
@@ -32,6 +32,11 @@ Use scores only as triage, not as pseudo-science.
 - Strong GEO content includes evidence: primary sources, credible citations, original data, named case studies, and first-hand experience.
 - Avoid keyword stuffing. Research shows citations, quotations, statistics, fluency/readability, and structure are more defensible than raw keyword repetition.
 - Platform overlap is low. Do not assume visibility in Google AI Overviews means visibility in ChatGPT or Perplexity.
+- For Google AI Overviews and AI Mode, there is no special AI-only schema, markup, or machine-readable file requirement. A page must be eligible for Google Search and snippets; keep fundamentals strong before adding experimental GEO artifacts.
+- Google AI Mode can use query fan-out across subtopics and data sources. Audit whether priority pages cover the actual comparison, planning, troubleshooting, local, and commercial sub-questions users ask, and whether internal links expose those subtopics clearly.
+- Search agents and generative UI shift some journeys from "find a page" to "complete a task." For calculators, product/service selection, bookings, local availability, and commerce, make visible facts, constraints, prices, availability, provider links, policies, and next actions explicit on canonical pages and first-party feeds.
+- Generative UI/mini-app answers still need source material. Prefer useful public tools, tables, examples, datasets, and explainers that can be cited or transformed, not hidden schema or content written only for bots.
+- Measure Google AI search with Search Console Web traffic plus analytics/conversion quality, because AI feature traffic is not split into a separate Search Console search type.
 - Perplexity has separate crawler surfaces: `PerplexityBot` for surfacing and linking sites in Perplexity search results, and `Perplexity-User` for user-triggered page fetches. Audit both when Perplexity visibility matters.
 - Generated-answer crawlers can be distinct from search indexing crawlers. For Yandex, audit `YandexAdditionalBot` / `YandexAdditional` rules separately because they affect AI/Alice answer use of indexed pages.
 
@@ -65,6 +70,8 @@ For each project keep 20-50 prompts:
 - Problem/solution: "how to automate <task> with AI", "where to learn <skill>".
 - Comparison: "<brand> vs alternatives", "ChatGPT alternative in Russia".
 - Commercial intent: "course/mentor/platform for <audience>".
+- Planning/action: "plan <task>", "book/find/buy <thing> with <constraints>", "best option for <specific situation>".
+- Generative UI/tool intent: "build a calculator/checklist/tracker/simulation for <problem>", "compare <options> in a table/dashboard".
 
 Record date, platform, answer summary, cited sources, whether target URL appears, factual errors, competitors.
 
