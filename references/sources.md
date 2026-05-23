@@ -6,6 +6,11 @@ Use these as the default source hierarchy. Browse current versions before relyin
 
 - Google Search Central: https://developers.google.com/search/docs
 - Google AI features and your website: https://developers.google.com/search/docs/appearance/ai-features
+- Google Search I/O 2026 updates: https://blog.google/products-and-platforms/products/search/search-io-2026/
+- Google AI Mode usage insights: https://blog.google/products-and-platforms/products/search/ai-mode-us-insights/
+- Google AI Mode agentic features: https://blog.google/products-and-platforms/products/search/ai-mode-agentic-personalized/
+- Google Search generative UI with Gemini: https://blog.google/products-and-platforms/products/search/gemini-3-search-ai-mode/
+- Google Universal Cart / agentic commerce: https://blog.google/products-and-platforms/products/shopping/google-shopping-cart/
 - Google Search Essentials: https://developers.google.com/search/docs/essentials
 - Google structured data docs: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
 - Google FAQ structured data nuance/deprecation: https://developers.google.com/search/docs/appearance/structured-data/faqpage
@@ -48,6 +53,7 @@ GitHub repos here are Tier 4 signal sources. Use them to discover checks, then v
 - HTML rendering of GEO paper: https://ar5iv.labs.arxiv.org/html/2311.09735
 - Structural Feature Engineering for GEO: https://arxiv.org/abs/2603.29979
 - Citation Selection to Citation Absorption framework: https://arxiv.org/abs/2604.25707
+- Measuring Google AI Overviews: Activation, Source Quality, Claim Fidelity, and Publisher Impact: https://arxiv.org/abs/2605.14021
 - AgenticGEO: https://arxiv.org/abs/2603.20213
 - AutoGEO: https://openreview.net/forum?id=K8EinVWtUB
 
