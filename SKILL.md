@@ -1,7 +1,7 @@
 ---
 name: 2030ai-seo-geo-skill
 description: "Operator skill for SEO, GEO/AI search visibility, and search-driven conversion work. Use for SEO/GEO audits, technical search visibility, AI Overviews/ChatGPT/Claude/Perplexity readiness, Yandex/Google visibility, robots/sitemap/llms.txt/schema checks, content citability, Russian-market SEO specifics, creating prioritized implementation backlogs, applying fixes in a local repo, verifying results, and tracking progress over time."
-user-invokable: true
+user-invocable: true
 argument-hint: "[audit|plan|execute|verify|track|monitor] [url-or-project]"
 metadata:
   owner: "2030AI"
