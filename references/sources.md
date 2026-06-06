@@ -6,6 +6,7 @@ Use these as the default source hierarchy. Browse current versions before relyin
 
 - Google Search Central: https://developers.google.com/search/docs
 - Google AI features and your website: https://developers.google.com/search/docs/appearance/ai-features
+- Google Search Console Generative AI performance reports (AI Overviews/AI Mode/Discover AI impressions + opt-out toggle, 2026-06): https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports
 - Google Search I/O 2026 updates: https://blog.google/products-and-platforms/products/search/search-io-2026/
 - Google AI Mode usage insights: https://blog.google/products-and-platforms/products/search/ai-mode-us-insights/
 - Google AI Mode agentic features: https://blog.google/products-and-platforms/products/search/ai-mode-agentic-personalized/

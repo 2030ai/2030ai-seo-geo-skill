@@ -36,7 +36,8 @@ Use scores only as triage, not as pseudo-science.
 - Google AI Mode can use query fan-out across subtopics and data sources. Audit whether priority pages cover the actual comparison, planning, troubleshooting, local, and commercial sub-questions users ask, and whether internal links expose those subtopics clearly.
 - Search agents and generative UI shift some journeys from "find a page" to "complete a task." For calculators, product/service selection, bookings, local availability, and commerce, make visible facts, constraints, prices, availability, provider links, policies, and next actions explicit on canonical pages and first-party feeds.
 - Generative UI/mini-app answers still need source material. Prefer useful public tools, tables, examples, datasets, and explainers that can be cited or transformed, not hidden schema or content written only for bots.
-- Measure Google AI search with Search Console Web traffic plus analytics/conversion quality, because AI feature traffic is not split into a separate Search Console search type.
+- Measure Google AI-surface visibility with the Search Console Generative AI performance report (Search + Discover impressions in AI Overviews, AI Mode, and Discover AI; breakdown by page, country, device, and date). Know its limits: impressions only with no clicks, data starts 2026-05-18, and rollout is staged (first available in UK from 2026-06-03 under the UK CMA / DMCCA 2024 mandate) — verify availability for the target market before relying on it. Pair it with Search Console Web performance plus analytics/conversion quality, because AI-feature clicks are still not separated into a dedicated Search Console search type.
+- The Generative AI report has a companion opt-out toggle that removes the site from AI Overviews, AI Mode, and Discover AI without affecting ordinary Search or the regular Discover feed. It is a control/privacy lever, not a ranking signal, and does not block Gemini. Do not recommend it as an SEO tactic; only consider it when the user has a deliberate reason to suppress AI-feature presence, and note the toggle takes effect on a delay (2026-06-17 for the initial UK rollout).
 - Perplexity has separate crawler surfaces: `PerplexityBot` for surfacing and linking sites in Perplexity search results, and `Perplexity-User` for user-triggered page fetches. Audit both when Perplexity visibility matters.
 - Generated-answer crawlers can be distinct from search indexing crawlers. For Yandex, audit `YandexAdditionalBot` / `YandexAdditional` rules separately because they affect AI/Alice answer use of indexed pages.
 
@@ -51,6 +52,7 @@ Negative signals do not automatically mean "bad"; they mean the site has an expl
 - Emerging AI exclusion directives such as `noai` / `noimageai` when present.
 - Excessively high or broad `Crawl-delay` rules that can slow discovery or refresh for important crawlers.
 - Stale sitemap timestamps, stale `llms.txt` ordering, or schema missing required basics such as `@context`, `@type`, and canonical `url`.
+- Google Search Console AI-features opt-out toggle enabled on the property, which deliberately removes the site from AI Overviews, AI Mode, and Discover AI. Confirm whether this is intentional before treating low AI-feature impressions as an optimization problem.
 
 ## Backlog Priority
 
