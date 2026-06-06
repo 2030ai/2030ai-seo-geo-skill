@@ -5,7 +5,7 @@ user-invocable: true
 argument-hint: "[audit|plan|execute|verify|track|monitor] [url-or-project]"
 metadata:
   owner: "2030AI"
-  version: "0.1.3"
+  version: "0.1.4"
   category: "seo-geo"
 ---
 
@@ -65,6 +65,7 @@ Read only the files needed for the task:
 - For Google AI Mode query fan-out, Search agents, generative UI, and agentic commerce/local booking, audit whether important facts, comparisons, tools, product/service availability, and action paths are visible to users and backed by canonical pages or first-party feeds.
 - For Perplexity, audit `PerplexityBot` and `Perplexity-User` separately: one is search/linking crawler policy, the other is user-triggered fetch access. If a WAF/CDN is present, verify current official IP JSON allowlists alongside user-agent rules.
 - For Yandex AI/Search with Alice, audit `YandexAdditionalBot` / `YandexAdditional` rules separately from primary Yandex indexing: they affect generated-answer use of already indexed pages, not ordinary indexing itself.
+- For Google AI-feature measurement, use the Search Console Generative AI performance report (impressions in AI Overviews/AI Mode/Discover AI) where available, and state its limits: impressions only, no clicks, staged rollout. Treat its opt-out toggle as a deliberate control lever, not an SEO tactic — it removes the site from AI features without changing ordinary Search ranking. See `references/methodology.md` and `references/sources.md`.
 
 ## Output Shape
 
