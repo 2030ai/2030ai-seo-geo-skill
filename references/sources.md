@@ -42,6 +42,21 @@ Use these as the default source hierarchy. Browse current versions before relyin
 - llms.txt hub: https://github.com/thedaviddias/llms-txt-hub
 - Firecrawl generator: https://github.com/firecrawl/llmstxt-generator
 
+## Agent Readiness / Discovery Diagnostics
+
+Use these as diagnostic surfaces and source pointers, not as canonical ranking guidance. Validate claims against official specs or direct site output before implementation.
+
+- Cloudflare Is Your Site Agent-Ready?: https://isitagentready.com/
+- Is Your Site Agent-Ready? scan API: `POST https://isitagentready.com/api/scan` with JSON body `{"url":"https://example.com/"}`
+- RFC 8288 Web Linking: https://www.rfc-editor.org/rfc/rfc8288
+- IANA Link Relation Types registry: https://www.iana.org/assignments/link-relations/link-relations.xhtml
+- RFC 9727 API Catalog: https://www.rfc-editor.org/rfc/rfc9727
+- Cloudflare Markdown for Agents: https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/
+- DNS for AI Discovery draft: https://datatracker.ietf.org/doc/draft-mozleywilliams-dnsop-dnsaid/
+- Content Signals draft: https://datatracker.ietf.org/doc/draft-romm-aipref-contentsignals/
+- Agent Skills Discovery draft: https://github.com/cloudflare/agent-skills-discovery-rfc
+- WebMCP draft/preview docs: https://webmachinelearning.github.io/webmcp/
+
 ## Methodology Watchlist
 
 GitHub repos here are Tier 4 signal sources. Use them to discover checks, then validate any claim against official docs or direct project output.

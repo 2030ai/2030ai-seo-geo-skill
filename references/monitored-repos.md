@@ -44,6 +44,13 @@ This list is used by a periodic refresh workflow. Treat every external repo as a
 - https://github.com/SecretiveShell/Awesome-llms-txt
 - https://github.com/delucis/starlight-llms-txt
 
+## Agent Discovery / Agent Readiness
+
+- https://isitagentready.com/
+- https://github.com/cloudflare/agent-skills-discovery-rfc
+- https://github.com/modelcontextprotocol/modelcontextprotocol
+- https://github.com/webmachinelearning/webmcp
+
 ## Periodic Refresh Procedure
 
 1. Check upstream changes in official docs from `sources.md`.
