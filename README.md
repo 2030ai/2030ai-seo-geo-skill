@@ -8,7 +8,7 @@
 
 - Technical SEO: crawlability, indexability, redirects, canonicals, sitemaps, robots, metadata, headings, internal links, image alt text, and rendered HTML checks.
 - Structured data: JSON-LD/schema validation, visible-content alignment, entity graph, and `sameAs` hygiene.
-- GEO и AI-search readiness: AI crawler policy, Google AI Mode / Search agents / generative UI implications, Perplexity `PerplexityBot` / `Perplexity-User` checks, `llms.txt`, answer-first passages, quotable facts, citations, source clarity, and prompt-set tracking.
+- GEO и AI-search readiness: AI crawler policy, external agent-readiness scorecards as triage, Google AI Mode / Search agents / generative UI implications, Perplexity `PerplexityBot` / `Perplexity-User` checks, `llms.txt`, answer-first passages, quotable facts, citations, source clarity, and prompt-set tracking.
 - Российский SEO-слой: Yandex Webmaster/Metrica, Yandex AI/Search with Alice crawler controls, поведение Yandex со schema.org, рублевые платежи, русскоязычные trust signals, Telegram/VK/Habr/vc.ru surfaces, privacy and legal-page checks.
 - Execution workflow: audit, plan, implement, verify, and track progress.
 
@@ -88,6 +88,7 @@ Tier 4 полезен для discovery, но не должен переопре�
 - Skill не обещает rankings в AI-search.
 - Skill не рекомендует fake reviews, hidden content, fake statistics или unsupported compliance claims.
 - `llms.txt` трактуется как emerging convention, а не official ranking requirement.
+- Agent-readiness scorecards are treated as diagnostic checklists, not requirements to fabricate API/OAuth/MCP/commerce metadata.
 - Robots decisions разделяются для search/referral crawlers и training crawlers.
 
 ## Лицензия

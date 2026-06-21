@@ -18,6 +18,9 @@
    - Analytics: Yandex Metrica/GA events when repo or deployed HTML reveals them.
 4. GEO checks:
    - AI crawler policy by user-agent category, separating search/linking crawlers, user-triggered fetchers, training crawlers, and regional generated-answer crawlers.
+   - External agent-readiness scan when relevant and network access allows:
+     `curl -sS -X POST https://isitagentready.com/api/scan -H 'content-type: application/json' --data '{"url":"https://example.com/"}'`.
+     Record the score and pass/fail checks, then independently verify actionable findings with direct HTTP/DNS/browser checks.
    - For Perplexity scopes: `PerplexityBot` policy separately from `Perplexity-User` access, plus WAF/CDN allowlist checks against the current official IP JSON endpoints when a WAF/CDN is present.
    - For Russian/Yandex scopes: `YandexBot` indexing policy separately from `YandexAdditionalBot` / `YandexAdditional` generated-answer policy for Yandex AI/Search with Alice.
    - `X-Robots-Tag`, robots meta, bot-specific meta, and emerging `noai` / `noimageai` directives on priority pages.
@@ -41,6 +44,7 @@ Safe automatic fixes:
 - Visible FAQ sections only when useful to users.
 - Direct-answer ledes for commercial pages.
 - Analytics event naming in code when the project already has analytics.
+- Conservative discovery metadata that points to real existing resources, such as an RFC 8288 `Link` header for `llms.txt` or sitemap, when it does not misrepresent site capabilities.
 
 Require explicit confirmation or owner fact-check:
 
@@ -49,6 +53,7 @@ Require explicit confirmation or owner fact-check:
 - Legal policy text.
 - Large IA changes, mass programmatic pages, backlink campaigns.
 - Creating new external publications under a person's name.
+- DNS changes, DNSSEC, Web Bot Auth, OAuth/OIDC, MCP/A2A, WebMCP, API catalogs, or commerce protocols unless the project already has the corresponding public surface and owner-approved operating model.
 
 ## Verification
 
@@ -62,6 +67,7 @@ Use project-native checks first:
 - Schema validator or JSON-LD parse checks.
 - Sitemap/robots/llms fetch checks.
 - Header and meta checks for `X-Robots-Tag`, `noindex`, `noai`, `noimageai`, and bot-specific directives.
+- External scorecard recheck when one was part of the audit, plus direct verification of each accepted finding. For `isitagentready.com`, store or summarize the JSON result and avoid claiming that a higher score equals better SEO/GEO.
 - WAF/CDN checks for AI-search crawlers when the project uses a security proxy. For Perplexity, compare allow rules and logs with the current official `PerplexityBot` and `Perplexity-User` IP JSON endpoints.
 - Yandex-specific robots checks for `Yandex`, `YandexBot`, `YandexAdditionalBot`, and `YandexAdditional` where the market is Russia/CIS.
 
