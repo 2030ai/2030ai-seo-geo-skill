@@ -1,6 +1,6 @@
 ---
 name: 2030ai-seo-geo-skill
-description: "Operator skill for SEO, GEO/AI search visibility, and search-driven conversion work. Use for SEO/GEO audits, technical search visibility, AI Overviews/ChatGPT/Claude/Perplexity readiness, Yandex/Google visibility, robots/sitemap/llms.txt/schema checks, content citability, Russian-market SEO specifics, creating prioritized implementation backlogs, applying fixes in a local repo, verifying results, and tracking progress over time."
+description: "/2030ai-seo-geo-skill — operator skill for SEO, GEO/AI search visibility, and search-driven conversion work. Use for SEO/GEO audits, technical search visibility, AI Overviews/ChatGPT/Claude/Perplexity readiness, Yandex/Google visibility, robots/sitemap/llms.txt/schema checks, content citability, Russian-market SEO specifics, creating prioritized implementation backlogs, applying fixes in a local repo, verifying results, and tracking progress over time."
 user-invocable: true
 argument-hint: "[audit|plan|execute|verify|track|monitor] [url-or-project]"
 metadata:
@@ -9,7 +9,7 @@ metadata:
   category: "seo-geo"
 ---
 
-# SEO/GEO Operator
+# /2030ai-seo-geo-skill
 
 This skill is an execution workflow, not a report generator. Use it to improve search visibility for Google/Yandex and AI-answer surfaces, then verify and track the change.
 

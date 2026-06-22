@@ -1,3 +1,5 @@
-display_name: "SEO/GEO Operator"
-short_description: "Audit, improve, verify, and track SEO/GEO visibility."
-default_prompt: "Audit this project for Google/Yandex SEO, AI search/GEO readiness, and search-driven conversion. Build a prioritized backlog, implement safe local fixes, verify them, and update project tracking."
+name: 2030ai-seo-geo-skill
+display_name: "/2030ai-seo-geo-skill"
+description: "/2030ai-seo-geo-skill — operator skill for SEO, GEO/AI search visibility, and search-driven conversion work. Use for SEO/GEO audits, technical search visibility, AI Overviews/ChatGPT/Claude/Perplexity readiness, Yandex/Google visibility, robots/sitemap/llms.txt/schema checks, content citability, Russian-market SEO specifics, creating prioritized implementation backlogs, applying fixes in a local repo, verifying results, and tracking progress over time."
+short_description: "operator skill for SEO, GEO/AI search visibility, and search-driven conversion work"
+default_prompt: "Use /2030ai-seo-geo-skill for this workflow."
