@@ -14,7 +14,9 @@
    - HTTP status, redirects, canonical, title/meta, H1 count, headings, links, images/alt, noindex, robots.
    - Rendered vs source HTML for important content.
    - Schema JSON-LD and visible-content alignment.
-   - Performance: Lighthouse/PageSpeed/CrUX when available.
+   - Performance: PageSpeed Insights for priority pages/templates on mobile and desktop when network/API access allows; include Lighthouse `performance`, `accessibility`, `best-practices`, and `seo` categories.
+   - PSI evidence: record tested URL, final URL, strategy, locale, categories, timestamp, Lighthouse/PageSpeed version, category scores, Core Web Vitals status, top failed audits, and whether field data came from page-level or origin fallback.
+   - CrUX: use PSI `loadingExperience` / `originLoadingExperience` only when present; for recurring field monitoring or missing PSI field data, prefer CrUX API/History API.
    - Analytics: Yandex Metrica/GA events when repo or deployed HTML reveals them.
 4. GEO checks:
    - AI crawler policy by user-agent category, separating search/linking crawlers, user-triggered fetchers, training crawlers, and regional generated-answer crawlers.
@@ -63,7 +65,7 @@ Use project-native checks first:
 - Local production server smoke if applicable.
 - `curl -I` and content checks for deployed/static outputs.
 - Browser screenshot/Playwright for important UX changes.
-- Lighthouse or PageSpeed where feasible.
+- Lighthouse or PageSpeed Insights where feasible, rerun mobile and desktop for pages touched by performance fixes and compare against the saved baseline.
 - Schema validator or JSON-LD parse checks.
 - Sitemap/robots/llms fetch checks.
 - Header and meta checks for `X-Robots-Tag`, `noindex`, `noai`, `noimageai`, and bot-specific directives.

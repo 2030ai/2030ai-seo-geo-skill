@@ -15,6 +15,10 @@ Use these as the default source hierarchy. Browse current versions before relyin
 - Google Search Essentials: https://developers.google.com/search/docs/essentials
 - Google structured data docs: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
 - Google FAQ structured data nuance/deprecation: https://developers.google.com/search/docs/appearance/structured-data/faqpage
+- Google PageSpeed Insights API overview: https://developers.google.com/speed/docs/insights/v5/get-started
+- Google PageSpeed Insights API `runPagespeed`: https://developers.google.com/speed/docs/insights/rest/v5/pagespeedapi/runpagespeed
+- Chrome UX Report API: https://developer.chrome.com/docs/crux/api
+- Chrome UX Report History API: https://developer.chrome.com/docs/crux/history-api
 - web.dev Core Web Vitals thresholds: https://web.dev/articles/defining-core-web-vitals-thresholds
 - Interaction to Next Paint: https://web.dev/inp/
 - Schema.org vocabulary: https://schema.org/

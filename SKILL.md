@@ -1,11 +1,11 @@
 ---
 name: 2030ai-seo-geo-skill
-description: "/2030ai-seo-geo-skill — operator skill for SEO, GEO/AI search visibility, and search-driven conversion work. Use for SEO/GEO audits, technical search visibility, AI Overviews/ChatGPT/Claude/Perplexity readiness, Yandex/Google visibility, robots/sitemap/llms.txt/schema checks, content citability, Russian-market SEO specifics, creating prioritized implementation backlogs, applying fixes in a local repo, verifying results, and tracking progress over time."
+description: "/2030ai-seo-geo-skill — operator skill for SEO, GEO/AI search visibility, and search-driven conversion work. Use for SEO/GEO audits, technical search visibility, PageSpeed Insights/Lighthouse/Core Web Vitals analysis, AI Overviews/ChatGPT/Claude/Perplexity readiness, Yandex/Google visibility, robots/sitemap/llms.txt/schema checks, content citability, Russian-market SEO specifics, creating prioritized implementation backlogs, applying fixes in a local repo, verifying results, and tracking progress over time."
 user-invocable: true
 argument-hint: "[audit|plan|execute|verify|track|monitor] [url-or-project]"
 metadata:
   owner: "2030AI"
-  version: "0.1.5"
+  version: "0.1.6"
   category: "seo-geo"
 ---
 
@@ -27,7 +27,7 @@ If the user asks for "full SEO", "GEO", "AI search", "AI Overviews", "Yandex SEO
 ## Operating Contract
 
 1. Establish scope: target domain, local repo path, market, primary conversions, priority pages, and whether off-site work is allowed.
-2. Build a baseline: crawl/indexability, robots, sitemap, metadata, canonical, hreflang if relevant, schema, headings, internal links, images, performance, analytics, content quality, GEO/AI readiness, and conversion path.
+2. Build a baseline: crawl/indexability, robots, sitemap, metadata, canonical, hreflang if relevant, schema, headings, internal links, images, PageSpeed Insights/Lighthouse/Core Web Vitals, analytics, content quality, GEO/AI readiness, and conversion path.
 3. For AI/agent-readiness audits, run external scorecards such as `isitagentready.com` as triage signals when network access allows, then verify every actionable item directly with HTTP/DNS/browser checks.
 4. Use evidence tiers. Prefer official docs and first-party tool output over vendor claims or anecdotal SEO posts.
 5. Produce an action backlog with `priority`, `impact`, `confidence`, `effort`, `owner`, `verification`.
@@ -69,6 +69,7 @@ Read only the files needed for the task:
 - For Perplexity, audit `PerplexityBot` and `Perplexity-User` separately: one is search/linking crawler policy, the other is user-triggered fetch access. If a WAF/CDN is present, verify current official IP JSON allowlists alongside user-agent rules.
 - For Yandex AI/Search with Alice, audit `YandexAdditionalBot` / `YandexAdditional` rules separately from primary Yandex indexing: they affect generated-answer use of already indexed pages, not ordinary indexing itself.
 - For Google AI-feature measurement, use the Search Console Generative AI performance report (impressions in AI Overviews/AI Mode/Discover AI) where available, and state its limits: impressions only, no clicks, staged rollout. Treat its opt-out toggle as a deliberate control lever, not an SEO tactic — it removes the site from AI features without changing ordinary Search ranking. See `references/methodology.md` and `references/sources.md`.
+- For PageSpeed Insights, run both mobile and desktop for priority pages when network/API access allows. Record the tested URL, final URL, strategy, categories, timestamp, Lighthouse version, scores, and actionable audits. Separate Lighthouse lab data from CrUX/field data; if PSI field data is missing or unavailable, use the CrUX API/History API for field monitoring rather than guessing.
 
 ## Output Shape
 
