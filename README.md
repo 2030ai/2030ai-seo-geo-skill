@@ -6,7 +6,7 @@
 
 ## Что Он Покрывает
 
-- Technical SEO: crawlability, indexability, redirects, canonicals, sitemaps, robots, metadata, headings, internal links, image alt text, and rendered HTML checks.
+- Technical SEO: crawlability, indexability, redirects, canonicals, sitemaps, robots, metadata, headings, internal links, image alt text, rendered HTML checks, PageSpeed Insights, Lighthouse, and Core Web Vitals.
 - Structured data: JSON-LD/schema validation, visible-content alignment, entity graph, and `sameAs` hygiene.
 - GEO и AI-search readiness: AI crawler policy, external agent-readiness scorecards as triage, Google AI Mode / Search agents / generative UI implications, Perplexity `PerplexityBot` / `Perplexity-User` checks, `llms.txt`, answer-first passages, quotable facts, citations, source clarity, and prompt-set tracking.
 - Российский SEO-слой: Yandex Webmaster/Metrica, Yandex AI/Search with Alice crawler controls, поведение Yandex со schema.org, рублевые платежи, русскоязычные trust signals, Telegram/VK/Habr/vc.ru surfaces, privacy and legal-page checks.

@@ -20,7 +20,7 @@ Use scores only as triage, not as pseudo-science.
 | --- | ---: | --- |
 | Crawl/index | 20 | robots, sitemap, canonical, status codes, noindex, redirects, JS dependency |
 | Content/entity | 20 | answer-first copy, topical coverage, E-E-A-T, author/org clarity, citations |
-| Technical UX | 15 | Core Web Vitals, mobile, accessibility, navigation, image performance |
+| Technical UX | 15 | PageSpeed Insights, Lighthouse, Core Web Vitals, mobile, accessibility, navigation, image performance |
 | Structured data | 10 | schema validity, visible-content alignment, sameAs/entity graph |
 | GEO/AI readiness | 20 | crawler policy, Yandex AI/Alice controls when relevant, llms.txt, quotable passages, evidence, off-site entity footprint |
 | Search conversion fit | 15 | intent/page match, CTA clarity, trust, analytics goals, funnel measurement |
@@ -41,6 +41,21 @@ Use scores only as triage, not as pseudo-science.
 - The Generative AI report has a companion opt-out toggle that removes the site from AI Overviews, AI Mode, and Discover AI without affecting ordinary Search or the regular Discover feed. It is a control/privacy lever, not a ranking signal, and does not block Gemini. Do not recommend it as an SEO tactic; only consider it when the user has a deliberate reason to suppress AI-feature presence, and note the toggle takes effect on a delay (2026-06-17 for the initial UK rollout).
 - Perplexity has separate crawler surfaces: `PerplexityBot` for surfacing and linking sites in Perplexity search results, and `Perplexity-User` for user-triggered page fetches. Audit both when Perplexity visibility matters.
 - Generated-answer crawlers can be distinct from search indexing crawlers. For Yandex, audit `YandexAdditionalBot` / `YandexAdditional` rules separately because they affect AI/Alice answer use of indexed pages.
+
+## PageSpeed Insights / Performance
+
+Use Google PageSpeed Insights (PSI) as Tier 1 Google tool output for priority templates and conversion pages. It is a page-level diagnostic, not a sitewide SEO score.
+
+Run PSI for both `mobile` and `desktop` strategies when network access allows. Include Lighthouse categories `performance`, `accessibility`, `best-practices`, and `seo` when using the API or UI. Record the tested URL, final/canonicalized URL, strategy, locale, categories, `analysisUTCTimestamp`, Lighthouse/PageSpeed version, category scores, Core Web Vitals status, and top actionable audits.
+
+Separate data types:
+
+- Lighthouse lab data: run-specific and variable; use it for reproducible technical opportunities and before/after verification.
+- CrUX/field data: real-user data in `loadingExperience` / `originLoadingExperience` when available. Google says PSI API real-world data may be discontinued, so use the CrUX API or CrUX History API for recurring field-data tracking.
+
+Prioritize PSI findings by search and conversion impact, not by score-chasing. High priority examples: failing Core Web Vitals on priority mobile pages, LCP/INP/CLS problems tied to templates, render-blocking resources on commercial pages, broken SEO category audits, and accessibility issues that affect navigation or forms. Treat small score deltas, third-party limitations, and one-off lab variance as lower priority unless they affect a critical journey.
+
+If PSI fails, is rate-limited, or returns no field data, state the blocker and fall back to local Lighthouse plus direct browser/network inspection. Do not invent PSI scores or imply that a green PSI score proves ranking improvement.
 
 ## Agent-Readiness Scorecards
 
