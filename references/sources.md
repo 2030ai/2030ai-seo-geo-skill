@@ -24,16 +24,17 @@ Use these as the default source hierarchy. Browse current versions before relyin
 - Schema.org vocabulary: https://schema.org/
 - Schema.org latest release: https://schema.org/version/latest
 - Bing Webmaster Guidelines: https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a
+- Bing Webmaster Tools AI Visibility Insights (Copilot/Bing AI-answer citation reporting: Intents, Topics, Citation Share, Compare, 2026-06-16): https://blogs.bing.com/search/June-2026/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare
 - IndexNow: https://www.indexnow.org/
 
 ## AI Crawlers / Robots
 
 - OpenAI crawlers: https://developers.openai.com/api/docs/bots
-- Anthropic crawler docs: https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler
+- Anthropic crawler docs (distinguishes `ClaudeBot` training, `Claude-User` user-triggered fetch, and `Claude-SearchBot` search index; per-agent `robots.txt` control): https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler
 - Perplexity crawler docs: https://docs.perplexity.ai/docs/resources/perplexity-crawlers
 - PerplexityBot IP JSON: https://www.perplexity.com/perplexitybot.json
 - Perplexity-User IP JSON: https://www.perplexity.com/perplexity-user.json
-- Google crawler docs and Google-Extended: https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers
+- Google crawler docs and Google-Extended: https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers
 - Common Crawl crawler: https://commoncrawl.org/ccbot
 - Yandex Search with Yandex AI: https://yandex.com/support/webmaster/en/yandex-ai
 - Yandex Search with Alice: https://yandex.ru/support/webmaster/en/alice

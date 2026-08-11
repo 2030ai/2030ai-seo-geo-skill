@@ -24,12 +24,14 @@
      `curl -sS -X POST https://isitagentready.com/api/scan -H 'content-type: application/json' --data '{"url":"https://example.com/"}'`.
      Record the score and pass/fail checks, then independently verify actionable findings with direct HTTP/DNS/browser checks.
    - For Perplexity scopes: `PerplexityBot` policy separately from `Perplexity-User` access, plus WAF/CDN allowlist checks against the current official IP JSON endpoints when a WAF/CDN is present.
+   - For Anthropic/Claude scopes: `ClaudeBot` training policy separately from `Claude-User` user-triggered fetch and `Claude-SearchBot` search-index access. For AI visibility keep `Claude-User` and `Claude-SearchBot` allowed on priority pages; a `ClaudeBot` block is a training opt-out, not an AI-answer block.
    - For Russian/Yandex scopes: `YandexBot` indexing policy separately from `YandexAdditionalBot` / `YandexAdditional` generated-answer policy for Yandex AI/Search with Alice.
    - `X-Robots-Tag`, robots meta, bot-specific meta, and emerging `noai` / `noimageai` directives on priority pages.
    - Broad or excessive `Crawl-delay` rules that may slow discovery or freshness.
    - `llms.txt` presence, freshness, coverage, and accuracy.
    - Answer-first paragraphs, quotable passages, evidence, source citations.
    - Entity graph: `sameAs`, author/org/project clarity, off-site references.
+   - AI-visibility measurement via official first-party reports when the property is verified: Google Search Console Generative AI performance report (AI Overviews/AI Mode/Discover AI impressions) and Bing Webmaster Tools AI Visibility Insights (Copilot/Bing AI-answer citations: Intents, Topics, Citation Share, Compare). Record impressions/citation observations only, not clicks.
    - AI prompt-set baseline if the user asks or current tools allow.
 
 ## Implementation
@@ -43,7 +45,7 @@ Safe automatic fixes:
 - Heading hierarchy and duplicate H1 issues.
 - Image alt text when context is clear.
 - Internal links between relevant pages.
-- Visible FAQ sections only when useful to users.
+- Visible FAQ sections only when useful to users; do not add `FAQPage` markup to chase a Google rich result (removed from Google Search in June 2026), though the markup stays valid schema.org for machine understanding.
 - Direct-answer ledes for commercial pages.
 - Analytics event naming in code when the project already has analytics.
 - Conservative discovery metadata that points to real existing resources, such as an RFC 8288 `Link` header for `llms.txt` or sitemap, when it does not misrepresent site capabilities.
