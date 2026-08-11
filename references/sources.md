@@ -34,7 +34,7 @@ Use these as the default source hierarchy. Browse current versions before relyin
 - Perplexity crawler docs: https://docs.perplexity.ai/docs/resources/perplexity-crawlers
 - PerplexityBot IP JSON: https://www.perplexity.com/perplexitybot.json
 - Perplexity-User IP JSON: https://www.perplexity.com/perplexity-user.json
-- Google crawler docs and Google-Extended: https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers
+- Google crawler docs and Google-Extended: https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers
 - Common Crawl crawler: https://commoncrawl.org/ccbot
 - Yandex Search with Yandex AI: https://yandex.com/support/webmaster/en/yandex-ai
 - Yandex Search with Alice: https://yandex.ru/support/webmaster/en/alice
