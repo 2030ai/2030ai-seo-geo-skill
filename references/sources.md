@@ -13,6 +13,9 @@ Use these as the default source hierarchy. Browse current versions before relyin
 - Google Search generative UI with Gemini: https://blog.google/products-and-platforms/products/search/gemini-3-search-ai-mode/
 - Google Universal Cart / agentic commerce: https://blog.google/products-and-platforms/products/shopping/google-shopping-cart/
 - Google Search Essentials: https://developers.google.com/search/docs/essentials
+- Google Preferred Sources: <https://developers.google.com/search/docs/appearance/preferred-sources>
+- Google site reputation abuse policy: <https://developers.google.com/search/docs/essentials/spam-policies#site-reputation-abuse>
+- Google Search Central update on EEA site reputation policy enforcement (2026-08): <https://developers.google.com/search/blog/2026/08/update-site-reputation-policy>
 - Google structured data docs: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
 - Google FAQ structured data nuance/deprecation: https://developers.google.com/search/docs/appearance/structured-data/faqpage
 - Google PageSpeed Insights API overview: https://developers.google.com/speed/docs/insights/v5/get-started
@@ -30,6 +33,7 @@ Use these as the default source hierarchy. Browse current versions before relyin
 ## AI Crawlers / Robots
 
 - OpenAI crawlers: https://developers.openai.com/api/docs/bots
+- OpenAI publishers and developers FAQ (`OAI-SearchBot`, indirect link/title discovery, `noindex`): <https://help.openai.com/en/articles/12627856-publishers-and-developers-faq>
 - Anthropic crawler docs (distinguishes `ClaudeBot` training, `Claude-User` user-triggered fetch, and `Claude-SearchBot` search index; per-agent `robots.txt` control): https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler
 - Perplexity crawler docs: https://docs.perplexity.ai/docs/resources/perplexity-crawlers
 - PerplexityBot IP JSON: https://www.perplexity.com/perplexitybot.json
